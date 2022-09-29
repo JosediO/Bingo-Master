@@ -10,12 +10,16 @@
     <body>
 
             <h1>Bingo Master </h1>
-            <button onclick="play()">Play</button>
-            <button onclick="reload()">Reload</button>
+            <button id="play" onclick="play()">Play</button>
+            <button onclick="pause()">Pause</button>
+            <button onclick="location.reload(play)">Reload</button>
+            <div>
             <input id="slot0" type="text" disabled>
             <input id="slot1" type="text" disabled>
             <input id="slot2" type="text" disabled>
             <input id="slot3" type="text" disabled>
+            </div>
+            <div>
             <input type="checkbox" id="1">
             <input type="checkbox" id="2">
             <input type="checkbox" id="3">
@@ -91,6 +95,7 @@
             <input type="checkbox" id="73">
             <input type="checkbox" id="74">
             <input type="checkbox" id="75">
+            </div>
     </body>
     <script src="javascript.js">
     </script>

@@ -1,26 +1,41 @@
-let lastsorted;
 let table = [null,null,null,null];
 let numbers=[];
-let maxNumber = 85;
+let maxNumber = 75;
+let flag 
 function play(){
+    flag = true;
+    console.log("GO!")
     createNumber();
     show();
+    
 }
-
+function pause(){
+    if(flag == true){
+        console.log("Parou");
+        return flag = false;
+    }
+    
+}
 function createNumber(){
-    if(numbers.length == maxNumber){
-        if (confirm('Já não há mais! Quer recomeçar?')) numbers = [];
-        else return;
-    }
-    let globe = Math.ceil(Math.random()*maxNumber);
-    while(numbers.indexOf(globe)>=0){
-        globe = Math.ceil(Math.random() * maxNumber);
-    }
-    numbers.push(globe)
-    document.getElementById(globe).checked = true;
-    table.unshift(globe);
-    setTimeout(createNumber,5000);
-    show();
+        if(flag == true){
+            if(numbers.length == maxNumber){
+                if (confirm('Play again?')){
+                    numbers = [];
+                    location.reload(play);  
+                } 
+                else return;
+            }
+            let globe = Math.ceil(Math.random()*maxNumber);
+            while(numbers.indexOf(globe)>=0){
+                globe = Math.ceil(Math.random() * maxNumber);
+            }
+            numbers.push(globe)
+            document.getElementById(globe).checked = true;
+            table.unshift(globe);
+            setTimeout(createNumber,1000);
+            show();
+        }
+            
 }
 
 function show(){
