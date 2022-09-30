@@ -4,18 +4,23 @@ let maxNumber = 75;
 let flag 
 function play(){
     flag = true;
-    console.log("GO!")
     createNumber();
     show();
-    
+    console.log("GO!")
+    document.getElementById("play").disabled = true;
+    document.getElementById("reload").disabled = false;
+    document.getElementById("pause").disabled = false;
 }
 function pause(){
+    document.getElementById("play").disabled = false;
+    document.getElementById("pause").disabled = true;
     if(flag == true){
         console.log("Parou");
         return flag = false;
     }
     
 }
+
 function createNumber(){
         if(flag == true){
             if(numbers.length == maxNumber){
