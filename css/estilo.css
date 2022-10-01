@@ -1,4 +1,79 @@
 *{
-    margin: 0px;
-    padding: 0px;
-}    
+    margin: 0;
+    padding: 0;
+}
+
+#bingoBox{
+    display: flex;
+    flex-direction: row;
+    border: red 1px solid;
+}
+
+#titleBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#titleBox h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 15vh;
+    border: 1px solid blue;
+}
+
+#titleBox button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#titleBox button:disabled{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+    height: 53px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#play{
+    background-color: #00a800;
+    border: 2px solid #005500;
+    box-shadow: 3px 3px #007400;
+    
+}
+#play:disabled{
+    background-color: #00a800;
+    box-shadow: none;
+    border:none;
+}
+#pause{
+    background-color: #2124cc;
+    border: 2px solid #200079;
+    box-shadow: 3px 3px #00084e;
+}
+#pause:disabled{
+    background-color: #2124cc;
+    box-shadow: none;
+    border: none;
+}
+#reload{
+    background-color: #d32828;
+    border: 2px solid #d40000;
+    box-shadow: 3px 3px #920000;
+}
+#reload:disabled{
+    background-color: #d32828;
+    box-shadow: none;
+    border: none;
+}

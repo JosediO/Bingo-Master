@@ -17,10 +17,8 @@ function pause(){
     if(flag == true){
         console.log("Parou");
         return flag = false;
-    }
-    
+    }   
 }
-
 function createNumber(){
         if(flag == true){
             if(numbers.length == maxNumber){
@@ -37,12 +35,10 @@ function createNumber(){
             numbers.push(globe)
             document.getElementById(globe).checked = true;
             table.unshift(globe);
-            setTimeout(createNumber,1000);
+            setTimeout(createNumber,5000);
             show();
-        }
-            
+        }    
 }
-
 function show(){
     document.getElementById("slot0").value = table[0];
     document.getElementById("slot1").value = table[1];
