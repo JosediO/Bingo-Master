@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
-
 #bingoBox{
     display: flex;
     flex-direction: column;
+    background-color: #002000;
+    height: 100vh;
 }
 
 #titleBox{
@@ -13,18 +15,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px salmon solid;
 }
 #titleBox h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 35vw;
-    height: 15vh;
-    border: 1px solid blue;
+    color: white;
+    
 }
-
 #tableSlots{
     display: flex;
     flex-direction: column;
@@ -32,23 +31,75 @@
     align-items: center;
     padding: 0.5em;
 }
-#slot0{
+
+#firstSlot {
+    display: flex;
     width: 8em;
     height: 8em;
+    margin: 0.5em;
+    border: none;
+    outline: 1px solid gold;
+    outline-offset: 4px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    color: #000000;
 }
+
+#firstSlot input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 70px;
+    height: 70px;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 #treeSlots{
     display: flex;
     flex-direction: row;
-
 }
-.slots{
+
+.slots {
+    display: flex;
     width: 2.5em;
     height: 2.5em;
     margin: 0.5em;
+    border: none;
+    outline: 1px solid gold;
+    outline-offset: 4px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    color: #000000;
+}
+
+.slots input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    width: 40px;
+    width: 40px;
+    color: #000000;
+    background-color:transparent;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #buttonsBox{
     display: flex;
     flex-direction: column-reverse;
+    margin: 0.5em;
 }
 #buttonsBox button{
     display: flex;
@@ -60,7 +111,6 @@
     border-radius: 5px;
     margin: 5px;
 }
-
 #buttonsBox button:disabled{
     display: flex;
     flex-direction: row;
@@ -90,6 +140,7 @@
     box-shadow: 3px 3px #00084e;
 }
 #pause:disabled{
+    text-decoration: none;
     background-color: #2124cc;
     box-shadow: none;
     border: none;

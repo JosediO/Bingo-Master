@@ -19,21 +19,23 @@
                     <h1>Bingo Master </h1>
                 </div>
                 <div id="tableSlots">
-                    <input class="slots" id="slot0" type="text" disabled>
+                    <div id="firstSlot">
+                        <input id="slot0" type="text" disabled>
+                    </div >    
                         <div id="treeSlots">
-                            <input class="slots" id="slot1" type="text" disabled>
-                            <input class="slots" id="slot2" type="text" disabled>
-                            <input class="slots" id="slot3" type="text" disabled>
+                            <div class="slots"><input  id="slot1" type="text" disabled></div> 
+                            <div class="slots"><input  id="slot2" type="text" disabled></div>
+                            <div class="slots"><input  id="slot3" type="text" disabled></div>
                         </div>
                 </div>
                 <div id="buttonsBox">
                     <button id ="play" onclick="play()" ><i class="fa-solid fa-play fa-2xl"></i></button>
-                    <button id ="pause" disabled onclick="pause();"><i class="fa-solid fa-pause fa-2xl"></i></button>
+                    <button id ="pause" disabled onclick="pause()"><i class="fa-solid fa-pause fa-2xl"></i></button>
                     <button id ="reload" disabled onclick="location.reload(play)"><i class="fa-solid fa-arrows-rotate fa-2xl"></i></button>
                 </div>
             </div>
             <div id="tableBox">
-                <div class="tableColum" id="b" blur>
+                <div class="tableColum" id="b">
                     <input type="checkbox" id="1">
                     <input type="checkbox" id="2">
                     <input type="checkbox" id="3">
