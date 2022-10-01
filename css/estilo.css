@@ -5,14 +5,15 @@
 
 #bingoBox{
     display: flex;
-    flex-direction: row;
-    border: red 1px solid;
+    flex-direction: column;
 }
 
 #titleBox{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px salmon solid;
 }
 #titleBox h1{
     display: flex;
@@ -24,7 +25,32 @@
     border: 1px solid blue;
 }
 
-#titleBox button{
+#tableSlots{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+}
+#slot0{
+    width: 8em;
+    height: 8em;
+}
+#treeSlots{
+    display: flex;
+    flex-direction: row;
+
+}
+.slots{
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.5em;
+}
+#buttonsBox{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#buttonsBox button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -35,7 +61,7 @@
     margin: 5px;
 }
 
-#titleBox button:disabled{
+#buttonsBox button:disabled{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,6 +83,7 @@
     box-shadow: none;
     border:none;
 }
+
 #pause{
     background-color: #2124cc;
     border: 2px solid #200079;
@@ -76,4 +103,16 @@
     background-color: #d32828;
     box-shadow: none;
     border: none;
+}
+
+#tableBox{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#tableColum{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
