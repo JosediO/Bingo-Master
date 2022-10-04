@@ -3,6 +3,7 @@
     padding: 0;
     
 }
+
 #bingoBox{
     display: flex;
     flex-direction: column;
@@ -67,12 +68,43 @@
     flex-direction: row;
 }
 
-.slots {
+#s1{
     display: flex;
     width: 2.5em;
     height: 2.5em;
     margin: 0.5em;
     border: none;
+    font-weight: bold;
+    outline: 1px solid gold;
+    outline-offset: 4px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    color: #000000;
+}
+#s2{
+    display: flex;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.5em;
+    border: none;
+    font-weight: bold;
+    outline: 1px solid gold;
+    outline-offset: 4px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    color: #000000;
+}
+#s3{
+    display: flex;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.5em;
+    border: none;
+    font-weight: bold;
     outline: 1px solid gold;
     outline-offset: 4px;
     border-radius: 50px;
