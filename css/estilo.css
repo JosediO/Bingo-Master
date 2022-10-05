@@ -77,7 +77,7 @@
     font-weight: bold;
     outline: 1px solid gold;
     outline-offset: 4px;
-    border-radius: 50px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
@@ -92,7 +92,7 @@
     font-weight: bold;
     outline: 1px solid gold;
     outline-offset: 4px;
-    border-radius: 50px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
@@ -107,7 +107,7 @@
     font-weight: bold;
     outline: 1px solid gold;
     outline-offset: 4px;
-    border-radius: 50px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
@@ -190,12 +190,41 @@
 
 #tableBox{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
 }
 
-#tableColum{
+.tableColum{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.numberSlot{
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+}
+
+.numberSlot:disabled{
+    width: 2.3em;
+    height: 2.3em;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    color: transparent;
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

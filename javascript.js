@@ -31,7 +31,7 @@ function createNumber(){
                 globe = Math.ceil(Math.random() * maxNumber);
             }
             numbers.push(globe)
-            document.getElementById(globe).checked = true;
+            document.getElementById(globe).disabled = false;
             table.unshift(globe);
             setTimeout(createNumber,5000);
             show();
