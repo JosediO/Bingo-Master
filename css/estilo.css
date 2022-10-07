@@ -1,42 +1,48 @@
 *{
     margin: 0;
     padding: 0;
-    
+}
+
+body{
+    background-color: #002000;
 }
 
 #bingoBox{
     display: flex;
     flex-direction: column;
-    background-color: #002000;
     height: 100vh;
+    width: 100vw;
 }
 
 #titleBox{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
+#bingoTitle{
+    width: 100%;   
+}
 #titleBox h1{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
-    
 }
 #tableSlots{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5em;
 }
 
 #firstSlot {
     display: flex;
-    width: 8em;
-    height: 8em;
+    width: 6em;
+    height: 6em;
     margin: 0.5em;
     border: none;
     outline: 1px solid gold;
@@ -148,8 +154,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     border-radius: 5px;
     margin: 5px;
 }
@@ -157,7 +163,6 @@
 #play{
     background-color: #00a800;
     border: 2px solid #005500;
-    box-shadow: 3px 3px #007400;
     
 }
 #play:disabled{
@@ -169,10 +174,8 @@
 #pause{
     background-color: #2124cc;
     border: 2px solid #200079;
-    box-shadow: 3px 3px #00084e;
 }
 #pause:disabled{
-    text-decoration: none;
     background-color: #2124cc;
     box-shadow: none;
     border: none;
@@ -180,7 +183,6 @@
 #reload{
     background-color: #d32828;
     border: 2px solid #d40000;
-    box-shadow: 3px 3px #920000;
 }
 #reload:disabled{
     background-color: #d32828;
@@ -191,10 +193,10 @@
 #tableBox{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 45vh;
 }
 
 .tableColum{
@@ -203,14 +205,16 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
+    width: 18%;
+    height: 50vh;
 }
 
 .numberSlot{
-    width: 2.3em;
-    height: 2.3em;
+    width: 1.3em;
+    height: 1.3em;
     border-radius: 50%;
     border: none;
+    margin: 0.1em;
     font-weight: bold;
     font-size: large;
     color: black;
@@ -218,13 +222,688 @@
 }
 
 .numberSlot:disabled{
-    width: 2.3em;
-    height: 2.3em;
+    width: 1.3em;
+    height: 1.3em;
     border-radius: 50%;
     border: none;
     font-weight: bold;
     font-size: large;
     color: transparent;
-    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+    background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tableNumber{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#b{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;  
+    width: 100%;
+    background-color: rgb(74, 157, 253);
+    border-radius: 2em 0 0 0;
+}
+#i{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;  
+    width: 100%;
+    background-color: rgb(255, 234, 115);
+}
+#n{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;  
+    width: 100%;
+    background-color: rgb(255, 123, 123);
+}
+#g{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;  
+    width: 100%;
+    background-color: rgb(123, 248, 144);
+}
+#o{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid black;  
+    width: 100%;
+    background-color: rgb(255, 186, 59);
+    border-radius: 0 2em  0 0;
+}
+
+@media (width: 481px) /*Tablet*/{ 
+    
+    #titleBox{
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #bingoTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 13vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        width: 5em;
+        height: 5em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 49%;
+    }
+
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0.5em;
+        width: 25%;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 99%;
+        height: 49vh;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 8em;
+        height: 8em;
+        margin: 0.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    
+    #s1{
+        display: flex;
+        width: 3.5em;
+        height: 3.5em;
+        margin: 0.5em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2{
+        display: flex;
+        width: 3.5em;
+        height: 3.5em;
+        margin: 0.5em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3{
+        display: flex;
+        width: 3.5em;
+        height: 3.5em;
+        margin: 0.5em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 40px;
+        width: 40px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 65px;
+        height: 65px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 99%;
+        height: 54vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 19%;
+        height: 53vh;
+    }
+    
+    .numberSlot{
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        border: none;
+        margin: 0.1em;
+        font-weight: bold;
+        font-size: large;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 2em;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+}
+/*Laptop*/ 
+/*@media (width: 769px ) { 
+    
+    #titleBox{
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #bingoTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 13vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        width: 9em;
+        height: 2em;
+        font-size: 4em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 49%;
+    }
+    #treeSlots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0.5em;
+        width: 25%;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 14em;
+        height: 14em;
+        margin: 0.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #firstSlot input{
+        font-size: 6em;
+        width: 5em;
+        height: 5em;
+    }
+    
+    #s1{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s1 input{
+        width: 4em;
+        font-size:3em;
+    }
+    #s2{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2 input{
+        width: 4em;
+        font-size:3em;
+    } 
+    #s3{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3 input{
+        width: 4em;
+        font-size:3em;
+    } 
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 40px;
+        width: 40px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 99%;
+        height: 54vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 19%;
+        height: 53vh;
+    }
+    
+    .numberSlot{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: 900;
+        font-size: large;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 2em;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
+}*/
+/*Desktop*/
+/*@media (width: 1025px ) { 
+    #titleBox{
+        height: 45vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #bingoTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 13vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        width: 9em;
+        height: 2em;
+        font-size: 4em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 49%;
+    }
+    #treeSlots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0.5em;
+        width: 25%;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 14em;
+        height: 14em;
+        margin: 0.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #firstSlot input{
+        font-size: 6em;
+        width: 5em;
+        height: 5em;
+    }
+    
+    #s1{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s1 input{
+        width: 4em;
+        font-size:3em;
+    }
+    #s2{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2 input{
+        width: 4em;
+        font-size:3em;
+    } 
+    #s3{
+        display: flex;
+        width: 4.5em;
+        height: 4.5em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3 input{
+        width: 4em;
+        font-size:3em;
+    } 
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 40px;
+        width: 40px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 99%;
+        height: 54vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        width: 19%;
+        height: 53vh;
+    }
+    
+    .numberSlot{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: 900;
+        font-size: large;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 2em;
+        font-size: 2em;
+        font-weight: bold;
+    }
+    
 }
