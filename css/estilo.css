@@ -288,8 +288,8 @@ body{
     background-color: rgb(255, 186, 59);
     border-radius: 0 2em  0 0;
 }
-
-@media (width: 481px) /*Tablet*/{ 
+/*Tablet*/
+@media (width: 481px) { 
     
     #titleBox{
         height: 45vh;
@@ -487,7 +487,7 @@ body{
     
 }
 /*Laptop*/ 
-/*@media (width: 769px ) { 
+@media (width: 768px ) { 
     
     #titleBox{
         height: 45vh;
@@ -496,6 +496,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+
     }
     #bingoTitle{
         display: flex;
@@ -527,20 +528,20 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
     }
     #buttonsBox{
         display: flex;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: row-reverse;
         margin: 0.5em;
-        width: 25%;
+        width: 35%;
     }
 
     #firstSlot {
         display: flex;
-        width: 14em;
-        height: 14em;
+        width: 7em;
+        height: 7em;
         margin: 0.5em;
         border: none;
         outline: 1px solid gold;
@@ -552,225 +553,15 @@ body{
         color: #000000;
     }
     #firstSlot input{
-        font-size: 6em;
-        width: 5em;
-        height: 5em;
-    }
-    
-    #s1{
-        display: flex;
-        width: 4.5em;
-        height: 4.5em;
-        margin: 0.7em;
-        border: none;
-        font-weight: bold;
-        outline: 1px solid gold;
-        outline-offset: 4px;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
-        color: #000000;
-    }
-    #s1 input{
-        width: 4em;
-        font-size:3em;
-    }
-    #s2{
-        display: flex;
-        width: 4.5em;
-        height: 4.5em;
-        margin: 0.7em;
-        border: none;
-        font-weight: bold;
-        outline: 1px solid gold;
-        outline-offset: 4px;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
-        color: #000000;
-    }
-    #s2 input{
-        width: 4em;
-        font-size:3em;
-    } 
-    #s3{
-        display: flex;
-        width: 4.5em;
-        height: 4.5em;
-        margin: 0.7em;
-        border: none;
-        font-weight: bold;
-        outline: 1px solid gold;
-        outline-offset: 4px;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
-        color: #000000;
-    }
-    #s3 input{
-        width: 4em;
-        font-size:3em;
-    } 
-    .slots input{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: medium;
-        font-weight: bold;
-        width: 40px;
-        width: 40px;
-        color: #000000;
-        background-color:transparent;
-        border: none;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-    #buttonsBox button{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 9em;
-        height: 5em;
-        border-radius: 5px;
-        margin: 5px;
-    }
-    #buttonsBox button:disabled{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 9em;
-        height: 5em;
-        border-radius: 5px;
-        margin: 5px;
-    }
-    #tableBox{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 99%;
-        height: 54vh;
-    }
-    .tableColum{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-around;
-        width: 19%;
-        height: 53vh;
-    }
-    
-    .numberSlot{
-        width: 3em;
-        height: 3em;
-        border-radius: 50%;
-        border: none;
-        font-weight: 900;
-        font-size: large;
-        color: black;
-        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
-    }
-    
-    .numberSlot:disabled{
-        width: 3em;
-        height: 3em;
-        border-radius: 50%;
-        border: none;
-        font-weight: bold;
-        font-size: large;
-        color: transparent;
-        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-    #b,#i,#n,#g,#o{
-        height: 2em;
-        font-size: 2em;
-        font-weight: bold;
-    }
-    
-}*/
-/*Desktop*/
-/*@media (width: 1025px ) { 
-    #titleBox{
-        height: 45vh;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #bingoTitle{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 13vh;
-    }
-    #titleBox h1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        width: 9em;
-        height: 2em;
         font-size: 4em;
-    }
-
-    #tableSlots{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 49%;
-    }
-    #treeSlots{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #buttonsBox{
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        margin: 0.5em;
-        width: 25%;
-    }
-
-    #firstSlot {
-        display: flex;
-        width: 14em;
-        height: 14em;
-        margin: 0.5em;
-        border: none;
-        outline: 1px solid gold;
-        outline-offset: 4px;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
-        color: #000000;
-    }
-    #firstSlot input{
-        font-size: 6em;
         width: 5em;
         height: 5em;
     }
     
     #s1{
         display: flex;
-        width: 4.5em;
-        height: 4.5em;
+        width: 3.0em;
+        height: 3.0em;
         margin: 0.7em;
         border: none;
         font-weight: bold;
@@ -784,12 +575,12 @@ body{
     }
     #s1 input{
         width: 4em;
-        font-size:3em;
+        font-size:2em;
     }
     #s2{
         display: flex;
-        width: 4.5em;
-        height: 4.5em;
+        width: 3em;
+        height: 3em;
         margin: 0.7em;
         border: none;
         font-weight: bold;
@@ -803,12 +594,12 @@ body{
     }
     #s2 input{
         width: 4em;
-        font-size:3em;
+        font-size:2em;
     } 
     #s3{
         display: flex;
-        width: 4.5em;
-        height: 4.5em;
+        width: 3em;
+        height: 3em;
         margin: 0.7em;
         border: none;
         font-weight: bold;
@@ -822,7 +613,7 @@ body{
     }
     #s3 input{
         width: 4em;
-        font-size:3em;
+        font-size:2em;
     } 
     .slots input{
         display: flex;
@@ -831,8 +622,8 @@ body{
         text-align: center;
         font-size: medium;
         font-weight: bold;
-        width: 40px;
-        width: 40px;
+        width: 25px;
+        width: 25px;
         color: #000000;
         background-color:transparent;
         border: none;
@@ -844,7 +635,7 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 9em;
+        width: 15em;
         height: 5em;
         border-radius: 5px;
         margin: 5px;
@@ -854,7 +645,7 @@ body{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 9em;
+        width: 15em;
         height: 5em;
         border-radius: 5px;
         margin: 5px;
@@ -863,23 +654,23 @@ body{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 99%;
-        height: 54vh;
+        height: 65vh;
     }
     .tableColum{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
-        width: 19%;
-        height: 53vh;
+        justify-content: space-evenly;
+        width: 13%;
+        height: 55vh;
     }
     
     .numberSlot{
-        width: 3em;
-        height: 3em;
+        width: 1.65em;
+        height: 1.65em;
         border-radius: 50%;
         border: none;
         font-weight: 900;
@@ -889,8 +680,8 @@ body{
     }
     
     .numberSlot:disabled{
-        width: 3em;
-        height: 3em;
+        width: 1.65em;
+        height: 1.65em;
         border-radius: 50%;
         border: none;
         font-weight: bold;
@@ -901,9 +692,694 @@ body{
     }
 
     #b,#i,#n,#g,#o{
-        height: 2em;
-        font-size: 2em;
+        height: 1em;
+        font-size: 1.5em;
         font-weight: bold;
+        border: none; 
     }
     
+    #b,#o{
+       border-radius: 0%; 
+    }
 }
+/*Desktop*/
+@media (width: 1024px ) {
+    
+    #bingoBox{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #titleBox{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #bingoTitle{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+
+    }
+    #treeSlots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 10em;
+        height: 10em;
+        margin: 0.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #firstSlot input{
+        font-size: 5em;
+        width: 5em;
+        height: 5em;
+    }
+    #s1{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s1 input{
+        width: 4em;
+        font-size:2em;
+    }
+    #s2{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2 input{
+        width: 4em;
+        font-size:2em;
+    } 
+    #s3{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3 input{
+        width: 4em;
+        font-size:2em;
+    } 
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 25px;
+        width: 25px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: top;
+        width: 90%;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: top;
+        width: 17%;
+        height: 80vh;
+        margin-top: 2em;
+    }
+    
+    .numberSlot{
+        width: 2.7em;
+        height: 2.7em;
+        border-radius: 50%;
+        border: none;
+        font-weight: 800;
+        font-size: large;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 2.7em;
+        height: 2.7em;
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 1em;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: none; 
+        margin-bottom: 1em;
+    }
+    
+    #b,#o{
+       border-radius: 0%; 
+    }
+}
+/*TV*/
+@media(min-width: 1440px){
+    #bingoBox{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #titleBox{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #bingoTitle{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+
+    }
+    #treeSlots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 10em;
+        height: 10em;
+        margin: 0.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #firstSlot input{
+        font-size: 5em;
+        width: 5em;
+        height: 5em;
+    }
+    #s1{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s1 input{
+        width: 4em;
+        font-size:2em;
+    }
+    #s2{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2 input{
+        width: 4em;
+        font-size:2em;
+    } 
+    #s3{
+        display: flex;
+        width: 4.3em;
+        height: 4.3em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3 input{
+        width: 4em;
+        font-size:2em;
+    } 
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 25px;
+        width: 25px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: top;
+        width: 90%;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 6em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: top;
+        width: 17%;
+        height: 80vh;
+        margin-top: 2em;
+    }
+    
+    .numberSlot{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: 900;
+        font-size: large;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-weight: bold;
+        font-size: large;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 1em;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: none; 
+        margin-bottom: 1em;
+    }
+    
+    #b,#o{
+       border-radius: 0%; 
+    }
+}
+/*4K*/
+@media(width: 2560px){
+    #bingoBox{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #titleBox{
+        width: 30%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        border: #00a800 1px solid;
+
+    }
+    #bingoTitle{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+    }
+    #titleBox h1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        font-size: 5em;
+    }
+
+    #tableSlots{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20vh;
+
+    }
+    #treeSlots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #firstSlot {
+        display: flex;
+        width: 23em;
+        height: 23em;
+        margin: 1.5em;
+        border: none;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #firstSlot input{
+        font-size: 10em;
+        width: 5em;
+        height: 5em;
+    }
+    #s1{
+        display: flex;
+        width: 7em;
+        height: 7em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s1 input{
+        width: 4em;
+        font-size:3.5em;
+    }
+    #s2{
+        display: flex;
+        width: 7em;
+        height: 7em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s2 input{
+        width: 4em;
+        font-size:3.5em;
+    } 
+    #s3{
+        display: flex;
+        width: 7em;
+        height: 7em;
+        margin: 0.7em;
+        border: none;
+        font-weight: bold;
+        outline: 1px solid gold;
+        outline-offset: 4px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
+        color: #000000;
+    }
+    #s3 input{
+        width: 4em;
+        font-size:3.5em;
+    } 
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 25px;
+        width: 25px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #buttonsBox{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: top;
+        width: 90%;
+    }
+
+    #buttonsBox button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+        font-size: x-large;
+    }
+    #buttonsBox button:disabled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 9em;
+        height: 5em;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: top;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100vh;
+    }
+    .tableColum{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: top;
+        width: 17%;
+        height: 80vh;
+        margin-top: 2em;
+    }
+    
+    .numberSlot{
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        font-size: 200%;
+        color: black;
+        background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }
+    
+    .numberSlot:disabled{
+        width: 3em;
+        height: 3em;
+        font-size: 200%;
+        border-radius: 50%;
+        border: none;
+        color: transparent;
+        background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #b,#i,#n,#g,#o{
+        height: 1em;
+        font-size: 4em;
+        font-weight: bold;
+        border: none; 
+        margin-bottom: 1em;
+    }
+    
+    #b,#o{
+       border-radius: 0%; 
+    }
+}
+
+
