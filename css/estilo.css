@@ -19,16 +19,20 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
 }
 #bingoTitle{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 3em;   
+    height: 3em;
+    padding-top: 0.7em;   
+}
+#titleBox img{
+    width: auto;
 }
 #titleBox h1{
-
-    display: flex;
+    display: hidden;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -279,6 +283,8 @@ body{
 
     #bingoBox{
         flex-direction: row-reverse;
+        width: 98vw;
+        height: 98vh;
     }
 
     #titleBox{
@@ -288,6 +294,7 @@ body{
         align-items: center;
         width: 22em;
         height: 100%;
+        padding-right: 2em;
     }
     #bingoTitle{
         display: flex;
@@ -297,9 +304,12 @@ body{
         height: 3em;
       
     }
+    #titleBox img{
+        width: 95%;
+        padding-top:3em ;
+    }
     #titleBox h1{
-    
-        display: flex;
+        display: hidden;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -369,7 +379,7 @@ body{
         align-items: flex-start;
         justify-content: space-evenly;
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         padding-top: 5em;
     }
     
@@ -417,6 +427,10 @@ body{
     }
     #bingoTitle{
         height: 9em;
+    }
+    #titleBox img{
+        width: 95%;
+        padding-top:3em ;
     }
     #titleBox h1{
         font-size: 3em;
