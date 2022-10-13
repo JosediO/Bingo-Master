@@ -72,7 +72,6 @@ body{
     color: #000000;
     background-color: transparent;
     border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #treeSlots{
@@ -141,7 +140,7 @@ body{
     color: #000000;
     background-color:transparent;
     border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 #buttonsBox{
     display: flex;
@@ -243,7 +242,6 @@ body{
     font-size: large;
     color: transparent;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .tableNumber{
@@ -502,7 +500,6 @@ body{
         color: #000000;
         background-color:transparent;
         border: none;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     #buttonsBox{
         display: flex;
