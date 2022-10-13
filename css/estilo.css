@@ -223,6 +223,7 @@ body{
     
     width: 1.3em;
     height: 1.3em;
+    box-shadow: #000000 3px 3px ;
     border-radius: 50%;
     border: none;
     margin: 0.1em;
