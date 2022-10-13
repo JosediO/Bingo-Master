@@ -424,6 +424,147 @@ body{
     }
     
 }
+/*Laptop*/ 
+@media only screen and (min-width: 1024px){
+
+    #bingoBox{
+        flex-direction: row-reverse;
+        width: 98vw;
+        height: 98vh;
+    }
+
+    #titleBox{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 22em;
+        height: 100%;
+        padding-right: 2em;
+    }
+    #bingoTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 3em;
+      
+    }
+    #titleBox img{
+        width: 95%;
+        padding-top:3em ;
+    }
+    #titleBox h1{
+        display: hidden;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    #tableSlots{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #firstSlot {
+        width: 7.5em;
+        height: 7.5em;
+    }
+    #firstSlot input{
+        font-size: 3em;
+    }
+    #s1 {
+        width: 3em;
+        height: 3em;
+        font-weight: bold;
+    }
+    #s2{
+        width: 3em;
+        height: 3em;
+        font-weight: bold;
+    }
+    #s3{
+        width: 3em;
+        height: 3em;
+        font-weight: bold;
+    }
+    
+    .slots input{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+        width: 90px;
+        color: #000000;
+        background-color:transparent;
+        border: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #buttonsBox{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0.5em;
+    }
+    #buttonsBox button{
+        width: 50px;
+        height: 50px;
+        
+    }
+    #buttonsBox button:disabled{
+        width: 50px;
+        height: 50px; 
+    }
+    
+    #tableBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70vh;
+        padding-top: 3em;
+    }
+    
+    .tableColum{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 8em;
+        height: 80vh;
+    }
+    
+    .numberSlot{
+        width: 2.5em;
+        height: 2.5em;
+        margin: 0.2em;
+    }
+    
+    .numberSlot:disabled{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    
+    
+    #b,#i,#n,#g,#o{
+        height: 2em;
+        font-size: 2em;
+        font-weight: bold;
+        border: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        width: 100%; 
+    }
+    
+}
 /*TV*/
 @media only screen and (min-width: 1440px){
     
