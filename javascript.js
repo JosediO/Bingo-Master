@@ -6,11 +6,19 @@ let clock;
 
 function play(){
     flag = true;
-    createNumber();
+    if(numbers > 0){
+    setTimeout(createNumber,5000)
     show();
     document.getElementById("play").disabled = true;
     document.getElementById("reload").disabled = false;
     document.getElementById("pause").disabled = false;
+    }else{
+        createNumber();
+        show();
+        document.getElementById("play").disabled = true;
+        document.getElementById("reload").disabled = false;
+        document.getElementById("pause").disabled = false;
+    }
 }
 function pause(){
     document.getElementById("pause").disabled = true;
