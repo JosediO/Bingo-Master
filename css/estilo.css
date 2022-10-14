@@ -24,12 +24,12 @@ body{
 #bingoTitle{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 95vw;
     height: 3em;
-    padding-top: 0.7em;   
+    padding-top: 0.7em;  
 }
 #titleBox img{
-    width: auto;
+    min-width: 5em;
 }
 #titleBox h1{
     display: hidden;

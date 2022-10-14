@@ -2,6 +2,8 @@ let table = [null,null,null,null];
 let numbers=[];
 let maxNumber = 75;
 let flag;
+let clock;
+
 function play(){
     flag = true;
     createNumber();
@@ -11,8 +13,9 @@ function play(){
     document.getElementById("pause").disabled = false;
 }
 function pause(){
-    document.getElementById("play").disabled = false;
     document.getElementById("pause").disabled = true;
+    document.getElementById("play").disabled = false;
+    clearTimeout(clock);
     if(flag == true){
         return flag = false;
     }   
@@ -33,8 +36,10 @@ function createNumber(){
             numbers.push(globe)
             document.getElementById(globe).disabled = false;
             table.unshift(globe);
-            setTimeout(createNumber,5000);
+            clock = setTimeout(createNumber,5000);
             show();
+        }else if(flag == false){
+            
         }    
 }
 function show(){
