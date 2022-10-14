@@ -6,8 +6,8 @@ let clock;
 
 function play(){
     flag = true;
-    if(numbers > 0){
-    setTimeout(createNumber,5000)
+    if(numbers.length > 0){
+    clock=setTimeout(createNumber,5000)
     show();
     document.getElementById("play").disabled = true;
     document.getElementById("reload").disabled = false;
