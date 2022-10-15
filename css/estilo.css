@@ -19,7 +19,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+    background-size: 11em 3em;
 }
 #bingoTitle{
     display: flex;
