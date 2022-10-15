@@ -33,7 +33,7 @@ body{
     display: flex;
     justify-content: center;
     width:11em;
-    height: auto;
+    height: 3em;
 }
 #titleBox h1{
     display: hidden;
@@ -318,9 +318,11 @@ body{
         height: 3em;
       
     }
-    #titleBox img{
-        width: 95%;
-        padding-top:3em ;
+    #bingoLogo{
+        display: flex;
+        justify-content: center;
+        width:11em;
+        height: 3em;
     }
     #titleBox h1{
         display: hidden;
@@ -459,9 +461,15 @@ body{
         height: 3em;
       
     }
-    #titleBox img{
-        width: 95%;
-        padding-top:3em ;
+    #bingoLogo{
+        display: flex;
+        justify-content: center;
+        width:14em;
+        height: 4em;
+    }
+    #bingoLogo img{
+        width:14em;
+        height: 4em;
     }
     #titleBox h1{
         display: hidden;
@@ -583,9 +591,15 @@ body{
     #bingoTitle{
         height: 9em;
     }
-    #titleBox img{
-        width: 95%;
-        padding-top:3em ;
+    #bingoLogo{
+        display: flex;
+        justify-content: center;
+        width:18em;
+        height: 5em;
+    }
+    #bingoLogo img{
+        width:18em;
+        height: 5em;
     }
     #titleBox h1{
         font-size: 3em;
