@@ -36,6 +36,11 @@ body{
     height: 3em;
     background-size: 11em 3em;
 }
+#bingoLogo img{
+    width:11em;
+    height: 3em;
+    background-size: 11em 3em;
+}
 #titleBox h1{
     display: hidden;
     flex-direction: row;
@@ -322,6 +327,11 @@ body{
     #bingoLogo{
         display: flex;
         justify-content: center;
+        width:11em;
+        height: 3em;
+        background-size: 11em 3em;
+    }
+    #bingoLogo img{
         width:11em;
         height: 3em;
         background-size: 11em 3em;
