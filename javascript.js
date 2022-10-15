@@ -7,7 +7,7 @@ let clock;
 function play(){
     flag = true;
     if(numbers.length > 0){
-    clock=setTimeout(createNumber,5000)
+    clock=setTimeout(createNumber,3000)
     show();
     document.getElementById("play").disabled = true;
     document.getElementById("reload").disabled = false;
@@ -67,4 +67,4 @@ function show(){
     if(table[3] != null){
         document.getElementById("s3").style.background = "radial-gradient(ellipse at 74% 71%, rgba(147, 147, 1, 1) 0%, rgba(247, 255, 92, 1) 95%, rgba(253, 240, 123, 1) 100%)";
     }
-    } //background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
+    }

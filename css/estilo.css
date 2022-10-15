@@ -28,8 +28,12 @@ body{
     height: 3em;
     padding-top: 0.7em;  
 }
-#titleBox img{
-    min-width: 5em;
+
+#bingoLogo{
+    display: flex;
+    justify-content: center;
+    width:11em;
+    height: auto;
 }
 #titleBox h1{
     display: hidden;
@@ -58,6 +62,7 @@ body{
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
     color: #000000;
+    -webkit-text-fill-color:#000000;
 }
 
 #firstSlot input{
@@ -70,6 +75,7 @@ body{
     width: 70px;
     height: 70px;
     color: #000000;
+    -webkit-text-fill-color:#000000;
     background-color: transparent;
     border: none;
 }
@@ -94,6 +100,7 @@ body{
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
     color: #000000;
+    -webkit-text-fill-color:#000000;
 }
 #s2{
     display: flex;
@@ -110,6 +117,7 @@ body{
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
     color: #000000;
+    -webkit-text-fill-color:#000000;
 }
 #s3{
     display: flex;
@@ -126,6 +134,7 @@ body{
     align-items: center;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #404040, #4a4b4a, #555555, #606060);
     color: #000000;
+    -webkit-text-fill-color:#000000;
 }
 
 .slots input{
@@ -138,6 +147,7 @@ body{
     width: 40px;
     width: 40px;
     color: #000000;
+    -webkit-text-fill-color:#000000;
     background-color:transparent;
     border: none;
     
@@ -229,6 +239,7 @@ body{
     font-weight: bold;
     font-size: large;
     color: black;
+    
     background-image: linear-gradient(to left top, #777a39, #818441, #8a8d49, #949752, #9ea15a, #a7aa66, #b1b472, #babd7e, #c6c890, #d1d4a2, #dddfb4, #e9ebc7);
 }
 
@@ -240,7 +251,7 @@ body{
     border: none;
     font-weight: bold;
     font-size: large;
-    color: transparent;
+    color: #0e0b0b;
     background-image: linear-gradient(to left top, #000000, #0b0b0b, #141414, #1a1a1a, #202020, #272727, #2e2e2e, #363636, #40404071, #4a4b4a6c, #55555567, #60606071);
 }
 
