@@ -80,7 +80,7 @@ function sleep(ms) {
 }
 
 async function game(){
-    while(action != 'RESTART'){
+    while(action != 'ENDGAME'){
         switch(action){
             case 'START':
                 createNumber();
