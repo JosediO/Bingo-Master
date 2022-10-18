@@ -19,7 +19,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-size: 11em 3em;
 }
 #bingoTitle{
     display: flex;
@@ -34,7 +33,6 @@ body{
     justify-content: center;
     width:11em;
     height: 3em;
-    background-size: 11em 3em;
 }
 #bingoLogo img{
     width:11em;
